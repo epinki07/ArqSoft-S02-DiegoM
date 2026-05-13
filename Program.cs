@@ -1,45 +1,30 @@
-﻿bool jugarOtraVez;
+using Ahorcado;
 
-do
+Console.CursorVisible = false;
+
+var motor = new MotorViborita(ancho: 30, alto: 15);
+var ui = new ConsolaUIViborita(motor);
+
+while (!motor.Perdido())
 {
-    Console.Clear();
-
-    string categoria = Ahorcado.ConsolaUI.PedirCategoria();
-
-    var repositorio = new Ahorcado.PalabrasEnMemoria(categoria);
-    var motor = new Ahorcado.MotorAhorcado(repositorio);
-    var ui = new Ahorcado.ConsolaUI(motor);
-
-    Console.WriteLine("\n=== AHORCADO ===");
-
-    while (!motor.Ganado() && !motor.Perdido())
-    {
-        ui.MostrarTablero();
-
-        char letra = ui.PedirLetra();
-
-        if (motor.LetraYaUsada(letra))
-        {
-            ui.MostrarMensaje("Ya usaste esa letra.");
-            Console.WriteLine("Presiona una tecla para continuar...");
-            Console.ReadKey();
-            continue;
-        }
-
-        motor.RegistrarLetra(letra);
-    }
-
     ui.MostrarTablero();
 
-    if (motor.Ganado())
-    {
-        ui.MostrarMensaje($"\n¡Ganaste! La palabra era: {motor.PalabraSecreta}");
-    }
-    else
-    {
-        ui.MostrarMensaje($"\nPerdiste. La palabra era: {motor.PalabraSecreta}");
-    }
+    ConsoleKey tecla = ui.LeerTecla();
 
-    jugarOtraVez = ui.PreguntarOtraVez();
+    if (tecla == ConsoleKey.Q)
+        break;
 
-} while (jugarOtraVez);
+    motor.CambiarDireccion(tecla);
+    motor.Avanzar();
+
+    Thread.Sleep(120);
+}
+
+ui.MostrarTablero();
+Console.CursorVisible = true;
+
+ui.MostrarMensaje(motor.Perdido()
+    ? "Juego terminado. Presiona una tecla para salir."
+    : "Saliste del juego. Presiona una tecla para cerrar.");
+
+Console.ReadKey(intercept: true);
