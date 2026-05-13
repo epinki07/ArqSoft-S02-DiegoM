@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-label="Captura del juego Viborita">
+  <rect width="760" height="430" fill="#101418"/>
+  <rect x="42" y="38" width="676" height="354" rx="8" fill="#171d23" stroke="#303a45"/>
+  <text x="82" y="85" fill="#e8edf2" font-family="Consolas, monospace" font-size="25">=== VIBORITA === Puntos: 30</text>
+  <text x="82" y="125" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">+------------------------------+</text>
+  <text x="82" y="151" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|                              |</text>
+  <text x="82" y="177" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|            *                 |</text>
+  <text x="82" y="203" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|                              |</text>
+  <text x="82" y="229" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|        ooo@                  |</text>
+  <text x="82" y="255" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|          o                   |</text>
+  <text x="82" y="281" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">|                              |</text>
+  <text x="82" y="307" fill="#dce4eb" font-family="Consolas, monospace" font-size="18">+------------------------------+</text>
+  <text x="82" y="355" fill="#8bd5ff" font-family="Consolas, monospace" font-size="22">Flechas/WASD: mover | Q: salir</text>
+</svg>

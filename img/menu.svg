@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-label="Captura del menu principal">
+  <rect width="760" height="430" fill="#101418"/>
+  <rect x="42" y="38" width="676" height="354" rx="8" fill="#171d23" stroke="#303a45"/>
+  <text x="82" y="92" fill="#e8edf2" font-family="Consolas, monospace" font-size="28">=== MENU DE JUEGOS ===</text>
+  <text x="82" y="150" fill="#dce4eb" font-family="Consolas, monospace" font-size="24">1. Ahorcado</text>
+  <text x="82" y="195" fill="#dce4eb" font-family="Consolas, monospace" font-size="24">2. Viborita</text>
+  <text x="82" y="240" fill="#dce4eb" font-family="Consolas, monospace" font-size="24">3. Salir</text>
+  <text x="82" y="310" fill="#8bd5ff" font-family="Consolas, monospace" font-size="24">Elige una opcion: 2</text>
+</svg>

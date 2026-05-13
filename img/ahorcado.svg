@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-label="Captura del juego Ahorcado">
+  <rect width="760" height="430" fill="#101418"/>
+  <rect x="42" y="38" width="676" height="354" rx="8" fill="#171d23" stroke="#303a45"/>
+  <text x="82" y="88" fill="#e8edf2" font-family="Consolas, monospace" font-size="25">=== AHORCADO ===</text>
+  <text x="82" y="135" fill="#dce4eb" font-family="Consolas, monospace" font-size="21"> -----</text>
+  <text x="82" y="165" fill="#dce4eb" font-family="Consolas, monospace" font-size="21"> |   |</text>
+  <text x="82" y="195" fill="#dce4eb" font-family="Consolas, monospace" font-size="21"> O   |</text>
+  <text x="82" y="225" fill="#dce4eb" font-family="Consolas, monospace" font-size="21">/|\  |</text>
+  <text x="82" y="255" fill="#dce4eb" font-family="Consolas, monospace" font-size="21">     |</text>
+  <text x="82" y="285" fill="#dce4eb" font-family="Consolas, monospace" font-size="21">=========</text>
+  <text x="330" y="150" fill="#dce4eb" font-family="Consolas, monospace" font-size="22">Intentos restantes: 2</text>
+  <text x="330" y="195" fill="#dce4eb" font-family="Consolas, monospace" font-size="22">Letras usadas: a, r, q, x</text>
+  <text x="330" y="240" fill="#ffd166" font-family="Consolas, monospace" font-size="22">Pista: la palabra empieza con 'a'</text>
+  <text x="330" y="300" fill="#8bd5ff" font-family="Consolas, monospace" font-size="24">Palabra: arq_________</text>
+</svg>
