@@ -35,7 +35,7 @@
         public char PedirLetra()
         {
             Console.Write("\nIngresa una letra: ");
-            string entrada = Console.ReadLine();
+            string? entrada = Console.ReadLine();
 
             while (string.IsNullOrWhiteSpace(entrada))
             {
@@ -65,7 +65,7 @@
             Console.WriteLine("3. .NET");
             Console.Write("\nElige una categoría: ");
 
-            string opcion = Console.ReadLine();
+            string? opcion = Console.ReadLine();
 
             return opcion switch
             {

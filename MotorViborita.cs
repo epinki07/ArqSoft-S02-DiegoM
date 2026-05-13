@@ -32,10 +32,10 @@ namespace Ahorcado
         {
             Direccion nuevaDireccion = tecla switch
             {
-                ConsoleKey.UpArrow => Direccion.Arriba,
-                ConsoleKey.DownArrow => Direccion.Abajo,
-                ConsoleKey.LeftArrow => Direccion.Izquierda,
-                ConsoleKey.RightArrow => Direccion.Derecha,
+                ConsoleKey.UpArrow or ConsoleKey.W => Direccion.Arriba,
+                ConsoleKey.DownArrow or ConsoleKey.S => Direccion.Abajo,
+                ConsoleKey.LeftArrow or ConsoleKey.A => Direccion.Izquierda,
+                ConsoleKey.RightArrow or ConsoleKey.D => Direccion.Derecha,
                 _ => _direccion
             };
 

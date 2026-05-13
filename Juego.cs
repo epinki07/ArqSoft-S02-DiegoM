@@ -46,7 +46,15 @@
                 }
 
                 Console.Write("\nIngresa una letra: ");
-                char letra = Console.ReadLine()[0];
+                string? entrada = Console.ReadLine();
+
+                while (string.IsNullOrWhiteSpace(entrada))
+                {
+                    Console.Write("Ingresa una letra valida: ");
+                    entrada = Console.ReadLine();
+                }
+
+                char letra = entrada.ToLower()[0];
 
                 if (_letrasUsadas.Contains(letra))
                 {

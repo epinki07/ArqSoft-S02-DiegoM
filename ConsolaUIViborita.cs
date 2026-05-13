@@ -37,14 +37,19 @@ namespace Ahorcado
             }
 
             Console.WriteLine("+" + new string('-', _motor.Ancho) + "+");
-            Console.WriteLine("Flechas: mover | Q: salir");
+            Console.WriteLine("Flechas/WASD: mover | Q: salir");
         }
 
         public ConsoleKey LeerTecla()
         {
-            return Console.KeyAvailable
-                ? Console.ReadKey(intercept: true).Key
-                : ConsoleKey.NoName;
+            ConsoleKey tecla = ConsoleKey.NoName;
+
+            while (Console.KeyAvailable)
+            {
+                tecla = Console.ReadKey(intercept: true).Key;
+            }
+
+            return tecla;
         }
 
         public void MostrarMensaje(string mensaje)
