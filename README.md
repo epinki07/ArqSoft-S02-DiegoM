@@ -1,84 +1,93 @@
- # Ahorcado
+# Ahorcado
 
-  Proyecto de consola desarrollado en C# como pr·ctica de programaciÛn orientada a objetos
-  y principios SOLID.
+Proyecto de consola desarrollado en C# como pr√°ctica de programaci√≥n orientada a objetos
+y principios SOLID.
 
-  El juego permite al usuario seleccionar una categorÌa de palabras y jugar Ahorcado desde
-  la consola.
+El juego permite al usuario seleccionar una categor√≠a de palabras y jugar Ahorcado desde
+la consola.
 
-  ## Funcionalidades
+## Funcionalidades
 
-  - Men˙ de categorÌas.
-  - SelecciÛn aleatoria de palabras.
-  - Registro de letras usadas.
-  - Conteo de intentos restantes.
-  - Dibujo del ahorcado en consola.
-  - Pistas cuando quedan pocos intentos.
-  - OpciÛn para volver a jugar.
+- Men√∫ de categor√≠as.
+- Selecci√≥n aleatoria de palabras.
+- Registro de letras usadas.
+- Conteo de intentos restantes.
+- Dibujo del ahorcado en consola.
+- Pistas cuando quedan pocos intentos.
+- Opci√≥n para volver a jugar.
 
-  ## Requisitos
+## Requisitos
 
-  - .NET SDK
-  - Visual Studio o Visual Studio Code
-  - Consola de Windows, PowerShell o terminal compatible
+- .NET SDK
+- Visual Studio o Visual Studio Code
+- Consola de Windows, PowerShell o terminal compatible
 
-  ## CÛmo ejecutar
+## C√≥mo ejecutar
 
-  Desde la carpeta del proyecto:
+Desde la carpeta del proyecto:
 
-  ```bash
-  dotnet run
+```bash
+dotnet run
+```
 
-  Para comprobar que compila correctamente:
+Para comprobar que compila correctamente:
 
-  dotnet build
+```bash
+dotnet build
+```
 
-  ## Estructura del proyecto
+## Estructura del proyecto
 
-  | Archivo | Responsabilidad |
-  |---|---|
-  | Program.cs | Controla el flujo principal del juego. |
-  | MotorAhorcado.cs | Contiene la lÛgica del Ahorcado. |
-  | ConsolaUI.cs | Muestra mensajes, dibuja el tablero y lee entradas del usuario. |
-  | IRepositorioPalabras.cs | Define la abstracciÛn para obtener palabras. |
-  | PalabrasEnMemoria.cs | Contiene las palabras organizadas por categorÌa. |
-  | Juego.cs | VersiÛn inicial del juego, conservada como referencia. |
+| Archivo | Responsabilidad |
+|---|---|
+| Program.cs | Controla el flujo principal del juego. |
+| MotorAhorcado.cs | Contiene la l√≥gica del Ahorcado. |
+| ConsolaUI.cs | Muestra mensajes, dibuja el tablero y lee entradas del usuario. |
+| IRepositorioPalabras.cs | Define la abstracci√≥n para obtener palabras. |
+| PalabrasEnMemoria.cs | Contiene las palabras organizadas por categor√≠a. |
+| Juego.cs | Versi√≥n inicial del juego, conservada como referencia. |
 
-  ## Principios SOLID aplicados
+## Principios SOLID aplicados
 
-  ### Single Responsibility Principle
+### Single Responsibility Principle
 
-  La lÛgica del juego se separÛ de la interfaz de usuario.
+La l√≥gica del juego se separ√≥ de la interfaz de usuario.
 
-  MotorAhorcado se encarga ˙nicamente de las reglas del juego, mientras que ConsolaUI se
-  encarga de interactuar con la consola.
+MotorAhorcado se encarga √∫nicamente de las reglas del juego, mientras que ConsolaUI se
+encarga de interactuar con la consola.
 
-  ### Dependency Inversion Principle
+### Dependency Inversion Principle
 
-  MotorAhorcado depende de la interfaz IRepositorioPalabras, no de una clase concreta.
+MotorAhorcado depende de la interfaz IRepositorioPalabras, no de una clase concreta.
 
-  Esto permite cambiar la fuente de palabras sin modificar la lÛgica principal del juego.
+Esto permite cambiar la fuente de palabras sin modificar la l√≥gica principal del juego.
 
-  ### Open/Closed Principle
+### Open/Closed Principle
 
-  El proyecto puede extenderse agregando nuevas fuentes de palabras o nuevas interfaces sin
-  modificar directamente el motor del juego.
+El proyecto puede extenderse agregando nuevas fuentes de palabras o nuevas interfaces sin
+modificar directamente el motor del juego.
 
-  ## Capturas de pantalla
+## Capturas de pantalla
 
-  | CategorÌas | Juego |
-  |---|---|
-  | CategorÌas | Juego |
+| Men√∫ de categor√≠as | Juego iniciado |
+|---|---|
+| ![Men√∫ de categor√≠as](docs/screenshots/categorias.png) | ![Juego iniciado](docs/screenshots/juego-inicio.png) |
 
-  ## Estado del proyecto
+| Partida perdida |
+|---|
+| ![Partida perdida](docs/screenshots/juego-perdido.png) |
 
-  El proyecto compila correctamente con:
+## Estado del proyecto
 
-  dotnet build
+El proyecto compila correctamente con:
 
-  ## Cl·usula de IA
+```bash
+dotnet build
+```
 
-  Este proyecto fue realizado con apoyo de las diapositivas del maestro.
+## Cl√°usula de IA
 
-  Se utilizÛ IA como apoyo para revisar errores, mejorar la redacciÛn del README y orientar
-  la refactorizaciÛn del cÛdigo.
+Este proyecto fue realizado con apoyo de las diapositivas del maestro.
+
+Se utiliz√≥ IA como apoyo para revisar errores, mejorar la redacci√≥n del README y orientar
+la refactorizaci√≥n del c√≥digo.
